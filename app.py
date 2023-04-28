@@ -13,15 +13,15 @@ from configparser import ConfigParser
 from pathlib import Path
 # import openai
 
-fpath = Path.cwd() / Path('.env')
-cfg_reader = ConfigParser()
-cfg_reader.read(str(fpath))
-cfg_reader.get('API_KEYS', 'OPENAI_API_KEY')
+# fpath = Path.cwd() / Path('.env')
+# cfg_reader = ConfigParser()
+# cfg_reader.read(str(fpath))
+# cfg_reader.get('API_KEYS', 'OPENAI_API_KEY')
 
-os.environ['OPENAI_API_KEY'] = cfg_reader.get('API_KEYS', 'OPENAI_API_KEY')
-os.environ['COHERE_API_KEY'] = cfg_reader.get('API_KEYS', 'COHERE_API_KEY')
-os.environ['QDRANT_API_KEY'] = cfg_reader.get('API_KEYS', 'QDRANT_API_KEY')
-os.environ['QDRANT_URL'] = cfg_reader.get('API_KEYS', 'QDRANT_URL')
+# os.environ['OPENAI_API_KEY'] = cfg_reader.get('API_KEYS', 'OPENAI_API_KEY')
+# os.environ['COHERE_API_KEY'] = cfg_reader.get('API_KEYS', 'COHERE_API_KEY')
+# os.environ['QDRANT_API_KEY'] = cfg_reader.get('API_KEYS', 'QDRANT_API_KEY')
+# os.environ['QDRANT_URL'] = cfg_reader.get('API_KEYS', 'QDRANT_URL')
 
 openai_api_key = os.getenv('OPENAI_API_KEY')
 cohere_api_key = os.getenv('COHERE_API_KEY')
