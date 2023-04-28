@@ -1,0 +1,8 @@
+flask
+flask_cors
+langchain
+qdrant_client
+openai
+pypdf
+requests
+cohere
